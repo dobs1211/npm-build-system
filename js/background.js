@@ -1,6 +1,7 @@
 var $ = require('jquery');
-var makeBackgroundRed = require('./background');
 
-$(document).ready(function() {
-    makeBackgroundRed();
-});
+var makeBackgroundRed = function() {
+    $('body').css('background-color', 'red');
+};
+
+module.exports = makeBackgroundRed;
